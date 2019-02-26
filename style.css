@@ -1,0 +1,46 @@
+body {
+	width: 60vw;
+	height: 100vh;
+	margin: 0 20vw 0 20vw;
+	display: block;
+}
+/* Use this class on the PARENT of whatever you are trying to center; remember that the PARENT tells the CHILD what to do! */
+/* NOTE: Centering content only works when the display property is "flex"! */
+.center-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Use this class on your image to restrict the size so it stays completely within it's parent div */
+.restrict-img-size {
+	max-height: 99%;
+	max-width: 99%;
+}
+
+.col {
+	height: 100%;
+	width: calc(100%/3);
+}
+
+.row {
+	height: 50%;
+	width: 100%;
+	display: flex;
+}
+
+.opaque {
+	opacity: 0.5;
+}
+
+.no-cursor:hover {
+	cursor: default;
+}
+
+.button:active {
+	transform: scale(0.95, 0.95);
+}
+
+.gray {
+	background-color: #E8DEDF;
+}
